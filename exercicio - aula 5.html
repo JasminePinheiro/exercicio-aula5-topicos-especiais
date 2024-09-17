@@ -7534,7 +7534,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -7548,7 +7548,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -7562,7 +7562,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">dict1</span> <span class="o">=</span> <span class="p">{</span>
@@ -7597,7 +7597,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">dict1</span><span class="p">)</span>
@@ -7611,7 +7611,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">dict2</span><span class="p">)</span>
@@ -7625,7 +7625,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df1</span><span class="p">)</span>
@@ -7673,11 +7673,11 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Junção interna</span>
-<span class="n">inner_join</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'chave'</span><span class="p">,</span> <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">'_df1'</span><span class="p">,</span> <span class="s1">'_df2'</span><span class="p">))</span>
+<span class="n">inner_join</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">'chave'</span><span class="p">,</span> <span class="s1">'chave1'</span><span class="p">],</span> <span class="n">how</span><span class="o">=</span><span class="s1">'inner'</span><span class="p">,</span> <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">'_dict1'</span><span class="p">,</span> <span class="s1">'_dict2'</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Junção interna:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">inner_join</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7692,35 +7692,17 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Junção interna:
-     nome_df1 chave chave1_df1  idade_df1 cidade_df1  Registro_df1  \
-0   Anderson    C0         C0         24     Santos         32123   
-1    Beatriz    C1         C1         36    Atibaia         45828   
-2      Bruno    C2         C2         45  Guarulhos         34985   
-3  Cristiano    C3         C3         56    Atibaia         13457   
-4     Daniel    C4         C0         29     Santos         98439   
-5    Douglas    C5         C1         20  Guarulhos         99348   
-6       Elma    C6         C2         38  Guarulhos         45019   
-7   Fabricio    C7         C3         47    Atibaia         24894   
+   nome_dict1 chave chave1  idade_dict1 cidade_dict1  Registro_dict1  \
+0   Anderson    C0     C0           24       Santos           32123   
+1    Douglas    C5     C1           20    Guarulhos           99348   
 
-  Departamento_df1 Formação_df1  nome_df2 chave1_df2  idade_df2 cidade_df2  \
-0               RH    Graduação   Gabriel         C0         23  Guarulhos   
-1               PD     Mestrado   Janaina         C0         56  Guarulhos   
-2               RH    Graduação      Luiz         C0         32    Atibaia   
-3              ADM      Técnico    Marcos         C0         22  Guarulhos   
-4              ADM    Graduação     Nadja         C1         36     Santos   
-5               RH      Técnico   Oswaldo         C1         68  Guarulhos   
-6              ADM    Graduação  Patricia         C1         22  Guarulhos   
-7               PD    Graduação   Ricardo         C1         38     Santos   
+  Departamento_dict1 Formação_dict1 nome_dict2  idade_dict2 cidade_dict2  \
+0                 RH      Graduação    Gabriel           23    Guarulhos   
+1                 RH        Técnico    Oswaldo           68    Guarulhos   
 
-   Registro_df2 Departamento_df2 Formação_df2  
-0         32948               PD      Técnico  
-1         13480              ADM    Graduação  
-2         22884               PD    Graduação  
-3         56821              ADM    Graduação  
-4         65938               PD     Mestrado  
-5         12956               RH    Graduação  
-6         75439              ADM     Mestrado  
-7         45392               PD    Graduação  
+   Registro_dict2 Departamento_dict2 Formação_dict2  
+0           32948                 PD        Técnico  
+1           12956                 RH      Graduação  
 </pre>
 </div>
 </div>
@@ -7731,11 +7713,11 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Junção externa à esquerda</span>
-<span class="n">left_join</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'chave'</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">'left'</span><span class="p">,</span> <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">'_df1'</span><span class="p">,</span> <span class="s1">'_df2'</span><span class="p">))</span>
+<span class="n">left_join</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">'chave'</span><span class="p">,</span> <span class="s1">'chave1'</span><span class="p">],</span> <span class="n">how</span><span class="o">=</span><span class="s1">'left'</span><span class="p">,</span> <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">'_dict1'</span><span class="p">,</span> <span class="s1">'_dict2'</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Junção externa à esquerda:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">left_join</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7751,35 +7733,35 @@ a.anchor-link {
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>
 Junção externa à esquerda:
-     nome_df1 chave chave1_df1  idade_df1 cidade_df1  Registro_df1  \
-0   Anderson    C0         C0         24     Santos         32123   
-1    Beatriz    C1         C1         36    Atibaia         45828   
-2      Bruno    C2         C2         45  Guarulhos         34985   
-3  Cristiano    C3         C3         56    Atibaia         13457   
-4     Daniel    C4         C0         29     Santos         98439   
-5    Douglas    C5         C1         20  Guarulhos         99348   
-6       Elma    C6         C2         38  Guarulhos         45019   
-7   Fabricio    C7         C3         47    Atibaia         24894   
+   nome_dict1 chave chave1  idade_dict1 cidade_dict1  Registro_dict1  \
+0   Anderson    C0     C0           24       Santos           32123   
+1    Beatriz    C1     C1           36      Atibaia           45828   
+2      Bruno    C2     C2           45    Guarulhos           34985   
+3  Cristiano    C3     C3           56      Atibaia           13457   
+4     Daniel    C4     C0           29       Santos           98439   
+5    Douglas    C5     C1           20    Guarulhos           99348   
+6       Elma    C6     C2           38    Guarulhos           45019   
+7   Fabricio    C7     C3           47      Atibaia           24894   
 
-  Departamento_df1 Formação_df1  nome_df2 chave1_df2  idade_df2 cidade_df2  \
-0               RH    Graduação   Gabriel         C0         23  Guarulhos   
-1               PD     Mestrado   Janaina         C0         56  Guarulhos   
-2               RH    Graduação      Luiz         C0         32    Atibaia   
-3              ADM      Técnico    Marcos         C0         22  Guarulhos   
-4              ADM    Graduação     Nadja         C1         36     Santos   
-5               RH      Técnico   Oswaldo         C1         68  Guarulhos   
-6              ADM    Graduação  Patricia         C1         22  Guarulhos   
-7               PD    Graduação   Ricardo         C1         38     Santos   
+  Departamento_dict1 Formação_dict1 nome_dict2  idade_dict2 cidade_dict2  \
+0                 RH      Graduação    Gabriel         23.0    Guarulhos   
+1                 PD       Mestrado        NaN          NaN          NaN   
+2                 RH      Graduação        NaN          NaN          NaN   
+3                ADM        Técnico        NaN          NaN          NaN   
+4                ADM      Graduação        NaN          NaN          NaN   
+5                 RH        Técnico    Oswaldo         68.0    Guarulhos   
+6                ADM      Graduação        NaN          NaN          NaN   
+7                 PD      Graduação        NaN          NaN          NaN   
 
-   Registro_df2 Departamento_df2 Formação_df2  
-0         32948               PD      Técnico  
-1         13480              ADM    Graduação  
-2         22884               PD    Graduação  
-3         56821              ADM    Graduação  
-4         65938               PD     Mestrado  
-5         12956               RH    Graduação  
-6         75439              ADM     Mestrado  
-7         45392               PD    Graduação  
+   Registro_dict2 Departamento_dict2 Formação_dict2  
+0         32948.0                 PD        Técnico  
+1             NaN                NaN            NaN  
+2             NaN                NaN            NaN  
+3             NaN                NaN            NaN  
+4             NaN                NaN            NaN  
+5         12956.0                 RH      Graduação  
+6             NaN                NaN            NaN  
+7             NaN                NaN            NaN  
 </pre>
 </div>
 </div>
@@ -7790,11 +7772,11 @@ Junção externa à esquerda:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Junção externa à direita</span>
-<span class="n">right_join</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'chave'</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">'right'</span><span class="p">,</span> <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">'_df1'</span><span class="p">,</span> <span class="s1">'_df2'</span><span class="p">))</span>
+<span class="n">right_join</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">'chave'</span><span class="p">,</span> <span class="s1">'chave1'</span><span class="p">],</span> <span class="n">how</span><span class="o">=</span><span class="s1">'right'</span><span class="p">,</span> <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">'_dict1'</span><span class="p">,</span> <span class="s1">'_dict2'</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Junção externa à direita:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">right_join</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7810,35 +7792,35 @@ Junção externa à esquerda:
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>
 Junção externa à direita:
-     nome_df1 chave chave1_df1  idade_df1 cidade_df1  Registro_df1  \
-0   Anderson    C0         C0         24     Santos         32123   
-1    Beatriz    C1         C1         36    Atibaia         45828   
-2      Bruno    C2         C2         45  Guarulhos         34985   
-3  Cristiano    C3         C3         56    Atibaia         13457   
-4     Daniel    C4         C0         29     Santos         98439   
-5    Douglas    C5         C1         20  Guarulhos         99348   
-6       Elma    C6         C2         38  Guarulhos         45019   
-7   Fabricio    C7         C3         47    Atibaia         24894   
+   nome_dict1 chave chave1  idade_dict1 cidade_dict1  Registro_dict1  \
+0   Anderson    C0     C0         24.0       Santos         32123.0   
+1        NaN    C1     C0          NaN          NaN             NaN   
+2        NaN    C2     C0          NaN          NaN             NaN   
+3        NaN    C3     C0          NaN          NaN             NaN   
+4        NaN    C4     C1          NaN          NaN             NaN   
+5    Douglas    C5     C1         20.0    Guarulhos         99348.0   
+6        NaN    C6     C1          NaN          NaN             NaN   
+7        NaN    C7     C1          NaN          NaN             NaN   
 
-  Departamento_df1 Formação_df1  nome_df2 chave1_df2  idade_df2 cidade_df2  \
-0               RH    Graduação   Gabriel         C0         23  Guarulhos   
-1               PD     Mestrado   Janaina         C0         56  Guarulhos   
-2               RH    Graduação      Luiz         C0         32    Atibaia   
-3              ADM      Técnico    Marcos         C0         22  Guarulhos   
-4              ADM    Graduação     Nadja         C1         36     Santos   
-5               RH      Técnico   Oswaldo         C1         68  Guarulhos   
-6              ADM    Graduação  Patricia         C1         22  Guarulhos   
-7               PD    Graduação   Ricardo         C1         38     Santos   
+  Departamento_dict1 Formação_dict1 nome_dict2  idade_dict2 cidade_dict2  \
+0                 RH      Graduação    Gabriel           23    Guarulhos   
+1                NaN            NaN    Janaina           56    Guarulhos   
+2                NaN            NaN       Luiz           32      Atibaia   
+3                NaN            NaN     Marcos           22    Guarulhos   
+4                NaN            NaN      Nadja           36       Santos   
+5                 RH        Técnico    Oswaldo           68    Guarulhos   
+6                NaN            NaN   Patricia           22    Guarulhos   
+7                NaN            NaN    Ricardo           38       Santos   
 
-   Registro_df2 Departamento_df2 Formação_df2  
-0         32948               PD      Técnico  
-1         13480              ADM    Graduação  
-2         22884               PD    Graduação  
-3         56821              ADM    Graduação  
-4         65938               PD     Mestrado  
-5         12956               RH    Graduação  
-6         75439              ADM     Mestrado  
-7         45392               PD    Graduação  
+   Registro_dict2 Departamento_dict2 Formação_dict2  
+0           32948                 PD        Técnico  
+1           13480                ADM      Graduação  
+2           22884                 PD      Graduação  
+3           56821                ADM      Graduação  
+4           65938                 PD       Mestrado  
+5           12956                 RH      Graduação  
+6           75439                ADM       Mestrado  
+7           45392                 PD      Graduação  
 </pre>
 </div>
 </div>
@@ -7849,11 +7831,11 @@ Junção externa à direita:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Junção externa completa</span>
-<span class="n">outer_join</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'chave'</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">'outer'</span><span class="p">,</span> <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">'_df1'</span><span class="p">,</span> <span class="s1">'_df2'</span><span class="p">))</span>
+<span class="n">outer_join</span> <span class="o">=</span>  <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">'chave'</span><span class="p">,</span> <span class="s1">'chave1'</span><span class="p">],</span> <span class="n">how</span><span class="o">=</span><span class="s1">'outer'</span><span class="p">,</span> <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">'_dict1'</span><span class="p">,</span> <span class="s1">'_dict2'</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Junção externa completa:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">outer_join</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7869,35 +7851,53 @@ Junção externa à direita:
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>
 Junção externa completa:
-     nome_df1 chave chave1_df1  idade_df1 cidade_df1  Registro_df1  \
-0   Anderson    C0         C0         24     Santos         32123   
-1    Beatriz    C1         C1         36    Atibaia         45828   
-2      Bruno    C2         C2         45  Guarulhos         34985   
-3  Cristiano    C3         C3         56    Atibaia         13457   
-4     Daniel    C4         C0         29     Santos         98439   
-5    Douglas    C5         C1         20  Guarulhos         99348   
-6       Elma    C6         C2         38  Guarulhos         45019   
-7   Fabricio    C7         C3         47    Atibaia         24894   
+    nome_dict1 chave chave1  idade_dict1 cidade_dict1  Registro_dict1  \
+0    Anderson    C0     C0         24.0       Santos         32123.0   
+1         NaN    C1     C0          NaN          NaN             NaN   
+2     Beatriz    C1     C1         36.0      Atibaia         45828.0   
+3         NaN    C2     C0          NaN          NaN             NaN   
+4       Bruno    C2     C2         45.0    Guarulhos         34985.0   
+5         NaN    C3     C0          NaN          NaN             NaN   
+6   Cristiano    C3     C3         56.0      Atibaia         13457.0   
+7      Daniel    C4     C0         29.0       Santos         98439.0   
+8         NaN    C4     C1          NaN          NaN             NaN   
+9     Douglas    C5     C1         20.0    Guarulhos         99348.0   
+10        NaN    C6     C1          NaN          NaN             NaN   
+11       Elma    C6     C2         38.0    Guarulhos         45019.0   
+12        NaN    C7     C1          NaN          NaN             NaN   
+13   Fabricio    C7     C3         47.0      Atibaia         24894.0   
 
-  Departamento_df1 Formação_df1  nome_df2 chave1_df2  idade_df2 cidade_df2  \
-0               RH    Graduação   Gabriel         C0         23  Guarulhos   
-1               PD     Mestrado   Janaina         C0         56  Guarulhos   
-2               RH    Graduação      Luiz         C0         32    Atibaia   
-3              ADM      Técnico    Marcos         C0         22  Guarulhos   
-4              ADM    Graduação     Nadja         C1         36     Santos   
-5               RH      Técnico   Oswaldo         C1         68  Guarulhos   
-6              ADM    Graduação  Patricia         C1         22  Guarulhos   
-7               PD    Graduação   Ricardo         C1         38     Santos   
+   Departamento_dict1 Formação_dict1 nome_dict2  idade_dict2 cidade_dict2  \
+0                  RH      Graduação    Gabriel         23.0    Guarulhos   
+1                 NaN            NaN    Janaina         56.0    Guarulhos   
+2                  PD       Mestrado        NaN          NaN          NaN   
+3                 NaN            NaN       Luiz         32.0      Atibaia   
+4                  RH      Graduação        NaN          NaN          NaN   
+5                 NaN            NaN     Marcos         22.0    Guarulhos   
+6                 ADM        Técnico        NaN          NaN          NaN   
+7                 ADM      Graduação        NaN          NaN          NaN   
+8                 NaN            NaN      Nadja         36.0       Santos   
+9                  RH        Técnico    Oswaldo         68.0    Guarulhos   
+10                NaN            NaN   Patricia         22.0    Guarulhos   
+11                ADM      Graduação        NaN          NaN          NaN   
+12                NaN            NaN    Ricardo         38.0       Santos   
+13                 PD      Graduação        NaN          NaN          NaN   
 
-   Registro_df2 Departamento_df2 Formação_df2  
-0         32948               PD      Técnico  
-1         13480              ADM    Graduação  
-2         22884               PD    Graduação  
-3         56821              ADM    Graduação  
-4         65938               PD     Mestrado  
-5         12956               RH    Graduação  
-6         75439              ADM     Mestrado  
-7         45392               PD    Graduação  
+    Registro_dict2 Departamento_dict2 Formação_dict2  
+0          32948.0                 PD        Técnico  
+1          13480.0                ADM      Graduação  
+2              NaN                NaN            NaN  
+3          22884.0                 PD      Graduação  
+4              NaN                NaN            NaN  
+5          56821.0                ADM      Graduação  
+6              NaN                NaN            NaN  
+7              NaN                NaN            NaN  
+8          65938.0                 PD       Mestrado  
+9          12956.0                 RH      Graduação  
+10         75439.0                ADM       Mestrado  
+11             NaN                NaN            NaN  
+12         45392.0                 PD      Graduação  
+13             NaN                NaN            NaN  
 </pre>
 </div>
 </div>
@@ -7908,11 +7908,11 @@ Junção externa completa:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Produto cartesiano</span>
-<span class="n">cartesian_product</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">on</span><span class="o">=</span><span class="s1">'key'</span><span class="p">)</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">'key'</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">cartesian_product</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">'cross'</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Produto cartesiano:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">cartesian_product</span><span class="p">)</span>
 </pre></div>
 </div>
